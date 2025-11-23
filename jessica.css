@@ -1,0 +1,157 @@
+/* -------------------------------------------- Início Body -------------------------------------------------- */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin-top: 120px;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+
+
+} 
+/* -------------------------------------------- Fim Body -------------------------------------------------- */
+
+
+/* -------------------------------------------- Início Header -------------------------------------------------- */
+
+header {
+  width: 100%;
+}
+
+/* Header fixo no topo */
+.fixo {
+  background-color: #000000;
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 150px;  /* <<< AQUI você controla o espaço da logo */
+  overflow: hidden;
+  position: fixed;     /* garante fixação */
+}
+
+/* Logo */
+.fixo a img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Menu centralizado */
+.menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px; /* espaço entre cada item do menu */
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  gap: 8px;      /* espaço entre ícone e texto */
+}
+
+.menu img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Links do menu */
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  gap: 100px;
+}
+
+/* -------------------------------------------- Fim Header -------------------------------------------------- */
+
+
+/* -------------------------------------------- Início Main -------------------------------------------------- */
+
+main {
+    flex: 1;
+ }
+
+.banner {
+  width: 100%;
+  overflow: hidden; /* impede scroll horizontal */
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block; /* remove espaço extra causado pelo inline-block */
+}
+
+.container{
+  display: flex;
+  background-color: #1de487;
+  height: 200px;
+  justify-content: center;   /* centraliza na horizontal */
+  align-items: center;       /* centraliza na vertical */
+  margin: 100px 100px;
+}
+
+.text1 {
+  font-size: larger;
+  text-align: center;
+}
+
+.cards img{
+  margin: 50px 100px;
+  width: 500px;
+  height: 500px;
+}
+
+
+/* -------------------------------------------- Fim Main -------------------------------------------------- */
+
+
+/* -------------------------------------------- Footer -------------------------------------------------- */
+
+footer {
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  color: lightgray;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #1de487;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* -------------------------------------------- Fim Footer -------------------------------------------------- */
